@@ -1,0 +1,47 @@
+\documentclass[12pt]{article} % 設定文件類型為文章，字型大小為 12pt
+
+\usepackage[utf8]{inputenc}    % 設定字符編碼為 UTF-8
+\usepackage{amsmath}           % 載入數學公式支持
+\usepackage{graphicx}          % 載入插入圖片的包
+\usepackage{geometry}          % 設定頁面邊界
+
+% 設定頁面邊界
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+\title{文章標題}   % 設定文章標題
+\author{你的名字}   % 設定作者名稱
+\date{\today}        % 設定日期為今天
+
+\begin{document}
+
+\maketitle   % 生成標題
+
+\begin{abstract}
+這是一篇範例文章的摘要。這裡可以簡要介紹文章內容。
+\end{abstract}
+
+\section{引言}
+這是文章的引言部分。你可以在這裡介紹你的研究問題、背景和目的。
+
+\section{方法}
+在這一部分，你可以描述你的研究方法和步驟。這裡可以包括數學公式，例如：
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+這是著名的質能等價公式。
+
+\section{結果}
+在這部分，你可以呈現你的研究結果，並進行分析。如果有圖表，也可以插入，例如：
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{example.jpg}
+\caption{範例圖片}
+\end{figure}
+
+\section{結論}
+總結你的研究結果，並提出未來可能的研究方向或建議。
+
+\end{document}
