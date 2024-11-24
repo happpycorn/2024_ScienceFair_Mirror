@@ -106,19 +106,20 @@ class MirrorFrame:
 
         return True
 
+if __name__ == "__main__":
 
-mirrorFrame = MirrorFrame()
+    mirrorFrame = MirrorFrame()
 
-coords = mirrorFrame.generateCoords()
+    coords = mirrorFrame.generateCoords()
 
-while True:
+    while True:
 
-    frame = mirrorFrame.getFrame()
+        frame = mirrorFrame.getFrame()
 
-    for coord in coords : mirrorFrame.drawLine(coord)
+        for coord in coords : mirrorFrame.drawLine(coord)
 
-    mirrorFrame.imshow("Mirror", mirrorFrame.canvas)
-    mirrorFrame.imshow("cap", frame)
+        mirrorFrame.imshow("Mirror", mirrorFrame.canvas)
+        mirrorFrame.imshow("cap", frame)
 
-    if mirrorFrame.endStream():
-        break
+        if mirrorFrame.endStream():
+            break
