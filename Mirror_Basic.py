@@ -94,17 +94,15 @@ class MirrorFrame:
         return coords
     
     def imshow(self, name, frame) : cv2.imshow(name, frame)
+
+    def isEnd(self) : return cv2.waitKey(1) & 0xFF == ord('q')
     
     def endStream(self):
-
-        if not cv2.waitKey(1) & 0xFF == ord('q') : return False
 
         print("exit...")
 
         mirrorFrame.cap.release()
         cv2.destroyAllWindows()
-
-        return True
 
 if __name__ == "__main__":
 
@@ -121,5 +119,6 @@ if __name__ == "__main__":
         mirrorFrame.imshow("Mirror", mirrorFrame.canvas)
         mirrorFrame.imshow("cap", frame)
 
-        if mirrorFrame.endStream():
+        if mirrorFrame.isEnd():
+            mirrorFrame.endStream()
             break

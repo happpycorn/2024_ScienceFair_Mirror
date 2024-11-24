@@ -3,8 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from Mirror_Basic import MirrorFrame
 
-plt.ion()
-
 mirrorFrame = MirrorFrame(
 
     line_width=5, 
@@ -14,16 +12,43 @@ mirrorFrame = MirrorFrame(
 
 coords = mirrorFrame.generateCoords()
 
-fig, ax = plt.subplots()
+class LivePlt:
 
-x = [time.time()]
-y = [0]
+    data_limit = 100
 
-data_limit = 100
+    def __init__(self, x=0, y=0):
 
-line, = ax.plot(x, y)
+        plt.ion()
 
-ax.set_ylim(255*mirrorFrame.size_x*mirrorFrame.size_y*3, 0)
+        self.fig, self.ax = plt.subplots()
+
+        self.x = [x]
+        self.y = [y]
+
+        self.line, = self.ax.plot(x, y)
+
+    def updatePlt(self, x, y):
+
+        self.x.append(x)
+        self.y.append(y)
+
+        if len(self.x) > self.data_limit : self.x.pop(0)
+        if len(self.y) > self.data_limit : self.y.pop(0)
+
+        self.line.set_xdata(self.x)
+        self.line.set_ydata(self.y)
+
+        self.ax.relim()
+        self.ax.autoscale_view()
+        plt.draw()
+    
+    def endStrean(self):
+
+        plt.ioff()
+
+livePlt = LivePlt(x=time.time())
+
+livePlt.ax.set_ylim(255*mirrorFrame.size_x*mirrorFrame.size_y*3, 0) # Avoid Data Move
 
 while True:
 
@@ -36,19 +61,9 @@ while True:
     mirrorFrame.imshow("Mirror", mirrorFrame.canvas)
     mirrorFrame.imshow("minus", frame_minus)
 
-    x.append(time.time())
-    y.append(np.sum(frame_minus))
+    livePlt.updatePlt(time.time(), np.sum(frame_minus))
 
-    if len(x) > data_limit : x.pop(0)
-    if len(y) > data_limit : y.pop(0)
-
-    line.set_xdata(x)
-    line.set_ydata(y)
-
-    ax.relim()
-    ax.autoscale_view()
-    plt.draw()
-
-    if mirrorFrame.endStream():
-        plt.ioff()
+    if mirrorFrame.isEnd():
+        mirrorFrame.endStream()
+        livePlt.endStrean()
         break
