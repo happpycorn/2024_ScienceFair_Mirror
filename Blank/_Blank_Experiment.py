@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
-from Mirror_Basic import MirrorFrame
-from Mirror_Experiment import LivePlt
+from Module import MirrorFrame, LivePlt
 
 mirrorFrame = MirrorFrame(
 

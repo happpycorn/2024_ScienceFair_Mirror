@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 讀取數據文件
-data = pd.read_csv("GoodData\Yellow_Blue.csv")
+data = pd.read_csv("GoodData\Red_Blue.csv")
 
 # 獲取數據列
 values = data["Value"].values
