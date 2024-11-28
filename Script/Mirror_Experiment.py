@@ -1,6 +1,6 @@
 import time
 import numpy as np
-from Module import LivePlt, MirrorFrame
+from Modules.Modules import LivePlt, MirrorFrame
 
 mirrorFrame = MirrorFrame(
 

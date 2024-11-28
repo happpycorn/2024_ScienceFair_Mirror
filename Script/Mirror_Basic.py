@@ -1,4 +1,4 @@
-from Module import MirrorFrame
+from Modules.Modules import MirrorFrame
 
 mirrorFrame = MirrorFrame()
 
