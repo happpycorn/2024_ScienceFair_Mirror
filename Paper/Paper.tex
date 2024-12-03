@@ -1,47 +1,62 @@
-\documentclass[12pt]{article} % 設定文件類型為文章，字型大小為 12pt
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}     % 設定字符編碼為 UTF-8
+\usepackage{fontspec}           % 支持自定義字體
+\usepackage{setspace}           % 行距設定
+\usepackage{titlesec}           % 標題樣式設定
+\usepackage{amsmath}            % 支持數學公式
+\usepackage{xeCJK}              % 支持 CJK 字體
 
-\usepackage[utf8]{inputenc}    % 設定字符編碼為 UTF-8
-\usepackage{amsmath}           % 載入數學公式支持
-\usepackage{graphicx}          % 載入插入圖片的包
-\usepackage{geometry}          % 設定頁面邊界
+\usepackage{graphicx}           % 載入插入圖片的包
 
-% 設定頁面邊界
-\geometry{top=1in, bottom=1in, left=1in, right=1in}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 
-\title{文章標題}   % 設定文章標題
-\author{你的名字}   % 設定作者名稱
-\date{\today}        % 設定日期為今天
+\setmainfont{Times New Roman}   % 設定英文主字體（可選）
+\setCJKmainfont{DFKai-SB}[
+    AutoFakeBold=true,          % 啟用粗體模擬
+    AutoFakeSlant=true          % 啟用斜體模擬
+]
+
+\onehalfspacing{}               % 設置 1.5 倍行距
+
+% 設定 \section 的字型大小和居中，不顯示節號
+\titleformat{\section}[block]
+  {\normalfont\fontsize{16}{24}\selectfont\centering}  % 設定字型大小為 16pt，行距為 24pt，並居中顯示
+  {}{0em}{}  % 不顯示節號，並設定標題與上方的間距
+
+% 設定 \subsection 與正文字體樣式相同，不顯示節號
+\titleformat{\subsection}[block]
+  {\normalfont\mdseries\upshape}   % 設定與正文相同的字型樣式
+  {}{0em}{}  % 不顯示子節號，並設定標題與上方的間距
+
+% 設定 \subsubsection 與正文字體樣式相同，並加上縮排，不顯示節號
+\titleformat{\subsubsection}[block]
+  {\normalfont\mdseries\upshape\leftskip=2em}   % 設定與正文相同的字型樣式，並設定左邊縮排 2em
+  {}{0em}{}  % 不顯示子子節號，並設定標題與上方的間距
+
+\setlength{\parindent}{2em}  % 設定段落的首行縮排為 2em
 
 \begin{document}
 
-\maketitle   % 生成標題
+\section{摘要}
 
-\begin{abstract}
-這是一篇範例文章的摘要。這裡可以簡要介紹文章內容。
-\end{abstract}
+\section{壹、前言}
 
-\section{引言}
-這是文章的引言部分。你可以在這裡介紹你的研究問題、背景和目的。
+\subsection{一、研究動機}
 
-\section{方法}
-在這一部分，你可以描述你的研究方法和步驟。這裡可以包括數學公式，例如：
+\subsection{二、研究目的}
 
-\begin{equation}
-E = mc^2
-\end{equation}
+\subsection{三、文獻探討}
 
-這是著名的質能等價公式。
+\section{貳、研究設備及器材}
 
-\section{結果}
-在這部分，你可以呈現你的研究結果，並進行分析。如果有圖表，也可以插入，例如：
+\section{參、研究過程與方法}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{example.jpg}
-\caption{範例圖片}
-\end{figure}
+\section{肆、研究結果}
 
-\section{結論}
-總結你的研究結果，並提出未來可能的研究方向或建議。
+\section{伍、討論}
+
+\section{陸、結論}
+
+（）
 
 \end{document}
