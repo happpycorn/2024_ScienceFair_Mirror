@@ -1,12 +1,24 @@
 # Fdb version 4
-["xdvipdfmx"] 1733223077.0471 "Paper.xdv" "Paper.pdf" "Paper" 1733223077.69029 0
-  "Paper.xdv" 1733223076 20024 2bd64390dac663cc33863ad097ebee6c "xelatex"
+["xdvipdfmx"] 0 "Paper.xdv" "Paper.pdf" "Paper" 0 -1
+  "Paper.xdv" 1733708093 32620 16c309bd92fbec931e42da20d99cd1f5 "xelatex"
   (generated)
   "Paper.pdf"
   (rewritten before read)
-["xelatex"] 1733223075.18848 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1733223077.68443 0
+["xelatex"] 1733708091.04601 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1733708094.02616 2
   "C:/Users/happp/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732754882 37546050 c464b94ed3a2d1a30e8332298b356bdc ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136765053 1300 b62933e007d01cfd073f79b963c01526 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1643997108 1057 525c2192b5febbd8c1f662c9468335bb ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty" 1686931788 2222 499d61426192c39efd8f410ee1a52b9c ""
@@ -19,6 +31,9 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1705273578 5048 425739d70251273bf93e3d51f3c40048 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1705273578 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd" 1705273578 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty" 1696169587 12494 0c0cdb824278a4d51cefeb2e79901315 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/cjk/CJKfntef.sty" 1670582841 12851 25a9b5cc006609feb5c9a20ce24a5392 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/ctex/ctexhook.sty" 1657818410 6505 33157acfddefdd8fd513e2308e07a435 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/fontspec/fontspec-xetex.sty" 1642213122 162076 2f6d31c4632f2730c57b9c0fda038e15 ""
@@ -41,9 +56,13 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Paper.aux" 1733223076 6376 d292b287d71fce33089d3fbb562826b7 "xelatex"
-  "Paper.tex" 1733223072 5887 ba319226862c792022ddbd4bd49a4250 ""
-  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1733223072 5887 ba319226862c792022ddbd4bd49a4250 ""
+  "Paper.aux" 1733708093 7045 32b4bdaaf7fed3e21e716056d0704677 "xelatex"
+  "Paper.tex" 1733708085 8637 d329242b4fa3820404dab8e08d682eb4 ""
+  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1733708085 8637 d329242b4fa3820404dab8e08d682eb4 ""
+  "img//mirror_example_1.jpg" 1733703810 863346 30520c63d9d138cec963917195dab006 ""
+  "img//program_flaw.jpg" 1733707913 428912 a5acaf7d0a474044973f7c1bc9fa8843 ""
+  "img/mirror_example_2.jpg" 1733703818 631924 a69c7fc02c5106a48404a9f76dc02d29 ""
+  "img/mirror_example_3.jpg" 1733406791 545636 1715a8170747d41805e3747ddd951753 ""
   (generated)
   "Paper.aux"
   "Paper.log"
