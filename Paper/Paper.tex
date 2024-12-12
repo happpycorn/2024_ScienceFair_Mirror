@@ -5,6 +5,7 @@
 \usepackage{setspace}           % 行距設定
 \usepackage{titlesec}           % 標題樣式設定
 \usepackage{graphicx}           % 載入插入圖片的包
+\usepackage{booktabs}           % 引入 booktabs 宏包
 \usepackage{amsmath}            % 支持數學公式
 \usepackage{caption}            % figurename -> 圖
 \usepackage{xeCJK}              % 支持 CJK 字體
@@ -13,6 +14,7 @@
 
 \setmainfont{Times New Roman}   % 設定英文主字體（可選）
 \setCJKmainfont{DFKai-SB}[
+% \setCJKmainfont{PMingLiU}[
     AutoFakeBold=true,          % 啟用粗體模擬
     AutoFakeSlant=true          % 啟用斜體模擬
 ]
@@ -42,12 +44,14 @@
 \setlength{\parindent}{2em} % 設定段落的首行縮排為 2em
 
 \renewcommand{\figurename}{圖} % figurename -> 圖
+\renewcommand{\tablename}{表}  % tablename -> 表
 
 \begin{document}
 
 \section{摘要}
 
 \newpage
+
 \section{壹、前言}
 
 \subsection{一、研究動機}
@@ -76,14 +80,6 @@
 
 數位鏡面最初是丹尼爾·羅森（2017）在機場捷運展示的一系列藝術作品。這些作品透過鏡頭捕捉現實世界的影像，並經由電腦計算處理後，以特殊的方式呈現在螢幕上。影像如圖\ref{fig:mirror_example_23}所示，經過數位化處理後，現實畫面顯得模糊且朦朧，營造出獨特的視覺效果。該系列中的每件作品皆展現了不同的風格與表現形式。本次實驗將聚焦於其中一種以類似線條形式呈現的數位鏡面作品，進行深入探討。
 
-\
-
-\begin{itshape}
-  《數位鏡面》由五組鏡面裝置構成，並以攝影機與程式控制觀眾互動與畫面反應機制，透過感應器將臨到作品鏡前的物件或人像，轉化為不同筆觸的動態速寫。
-\end{itshape}
-
-\
-
 \begin{figure}[htbp]
   \centering
   % 第一張圖片
@@ -100,77 +96,143 @@
 \caption{丹尼爾．羅森的數位鏡面}\label{fig:mirror_example_23}
 \end{figure}
 
-本次研究使用的是 happycorn 在 GitHub 上提供的數位鏡面模仿作品（2024）。程式中展示了以線條為主要呈現方式的數位鏡面，其每一幀的繪製過程包括：讀取影像、繪製多條線條，以及刷新畫面。繪製線條的過程則可細分為以下步驟：模擬一條虛擬線、計算該線條路徑上所有像素點的平均值、以及根據計算結果繪製線條。更詳細的流程如圖所示。
+本次研究使用的是 happycorn 在 GitHub 上提供的數位鏡面模仿作品（2024）。程式中展示了以線條為主要呈現方式的數33位鏡面，其每一幀的繪製過程包括：讀取影像、繪製多條線條，以及刷新畫面。繪製線條的過程則可細分為以下步驟：模擬一條虛擬線、計算該線條路徑上所有像素點的平均值、以及根據計算結果繪製線條。更詳細的流程如圖\ref{fig:program_flaw}所示。
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{img//program_flaw.jpg}
-  \caption{丹尼爾．羅森的數位鏡面}\label{fig:program_flaw}
+  \caption{數位鏡面流程圖}\label{fig:program_flaw}
 \end{figure}
 
 在整面數位鏡面中，可調整的參數有三項：線條寬度（width）、線條長度（length）與解析度（resolution）。線條寬度與長度分別表示數位鏡面在繪製時的線條寬度與長度；而解析度則是與繪製過程中的區域劃分相關。為了同時達成「繪製多條線」與「分散線條位置」的效果，作者透過 for 迴圈將整個鏡面切分為多個小方格，並在每個方格內繪製一條線，解析度即代表這些方格的寬度。
 
 \subsubsection{（二）時間複雜度}
 
-什麼是時間複雜度?
+為了比較程式的計算速度，本研究引用了《Introduction to Algorithms》（Cormen et al., 2022）中關於執行時間（running time）的計算觀念。該觀念首先假設，在程式中第 $i$ 步的執行時間為常數 $c_i$。接著，針對輸入大小 $n$，寫出相應的操作步數。例如，若要透過 for 迴圈從長度為 $n$ 的陣列中找出最大值，則需要執行 $n \cdot c_i$ 次操作。
 
-\subsubsection{（三）互動藝術}
+然而，直接這樣表示可能顯得過於繁瑣，因此可以進一步簡化為「增長的量級」。具體而言，只需保留最高次項，並忽略其係數，因為在輸入規模增長後，係數對總體增長的影響微乎其微。這樣的計算方式被翻譯成中文時，通常被稱為該演算法的「時間複雜度」。
 
-數位鏡面等數位藝術究竟在畫什麼?
+\subsubsection{（三）Sum of absolute difference}
 
-數位鏡面想要達到怎樣的效果?
+在本次實驗中，我需要計算圖片的相似度，為此將採用《Intelligent Image and Video Compression》（Bull \& Zhang, 2021）中提出的 Sum of Absolute Difference（SAD）演算法。該演算法針對兩張圖片 $s_1$ 和 $s_2$，計算它們之間的差異。
 
-\subsubsection{（四）Sum Of Absolute Difference}
+假設圖片 $s_1$ 和 $s_2$ 的尺寸為寬 $X$ 和高 $Y$，則 SAD 的計算方式如下：
 
-照片相似度比較
+\[
+SAD = \sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, y] - s_2[x, y] \right|
+\]
+
+其中，$s_1[x, y]$ 和 $s_2[x, y]$ 分別表示兩張圖片在座標 $(x,y)$ 的像素值。若圖片為彩色，則需引入額外的色彩通道維度，分別計算每個通道的差異，並累加為最終結果。
 
 \newpage
+
 \section{貳、研究設備及器材}
 
-硬體
-
-電腦乙台
-
-軟體
-
-Python、Opencv、Numpy、Plt、Anaconda、Ipynb
+\begin{table}[h]
+  \centering
+  \caption{研究設備與器材}
+  \begin{tabular}{p{2cm}p{5cm}p{5cm}}
+    \toprule
+    類別 & 項目 & 型號或版本\\
+    \midrule
+    硬體 & 電腦乙台 & ASUS M3401QC\\
+    軟體 & Python & 3.12.7 \\
+        & Anaconda & 24.11.0 \\
+        & Jupyter Notebook & 7.2.2 \\
+        & OpenCV & 4.10.0 \\
+        & NumPy & 2.1.3 \\
+        & Matplotlib & 3.9.2 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \newpage
+
 \section{參、研究過程與方法}
 
 \subsection{一、研究架構圖}
 
-\subsection{二、研究一：數位鏡面的時間複雜度}
+\subsection{二、實驗一：各參數對數位鏡面執行速度的影響}
 
-\subsubsection{（一）數位鏡面的時間複雜度計算}
+為了分析數位鏡面程式的執行速度及其影響因素，本實驗記錄程式的執行時間，並探討可調整參數（線條寬度、線條長度及解析度）對每幀渲染時間與單條線條繪製時間的影響。實驗設計如表\ref{table:sc2_des} 所示。
 
-\subsubsection{（二）計算結果驗算}
+\begin{table}[h]
+  \centering
+  \caption{執行速度與參數關係的實驗設計}\label{table:sc2_des}
+  \begin{tabular}{p{0.2cm}p{3.5cm}p{4.5cm}p{6cm}}
+    \toprule
+      & 操縱變因 & 應變變因 & 控制變因 \\ 
+    \midrule
+    1 & 線條寬度（width） & 繪製一條線所需的時間 & 線條長度、解析度等其他參數 \\ 
+    2 & 線條長度（length） & 繪製一條線所需的時間 & 線條寬度、解析度等其他參數 \\ 
+    3 & 線條寬度（width） & 繪製每幀所需的時間 & 線條長度、解析度等其他參數 \\ 
+    4 & 線條長度（length） & 繪製每幀所需的時間 & 線條寬度、解析度等其他參數 \\ 
+    5 & 解析度（resolution） & 繪製每幀所需的時間 & 線條寬度、線條長度等其他參數 \\ 
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-\subsection{三、研究二：數位鏡面輸出結果量化}
+\subsection{三、實驗二：各參數對數位鏡面顯示畫面的影響}
 
-\subsubsection{（一）「模糊」的量化}
+數位鏡面在繪製過程中，當畫面發生變化時，所呈現的內容會逐漸接近現實場景，直至達到一定相似程度後停止變化。我將這一階段稱為穩定狀態。
 
-\subsubsection{（二）「變化」的量化}
+為了量化數位鏡面與現實場景之間的相似程度，我使用 SAD 演算法，並觀察兩項數據：一是數位鏡面進入穩定狀態後與現實的差異，二是畫面變動後達到穩定狀態所需的時間。為更直觀地表達 SAD 的計算結果，我將其歸一化為百分比形式。具體方法為將 SAD 值除以理論最大值，公式如下：
 
-\subsection{四、實驗一：各項參數對於數位鏡面的影響}
+\[
+SAD_{\text{normalized}} = \frac{\sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, y] - s_2[x, y] \right|}{X \cdot Y \cdot 255}
+\]
 
-\subsubsection{（一）線條寬度（width）對於數位鏡面的影響}
+其中，$X$ 和 $Y$ 分別為圖片的寬度與高度，$255$ 為像素值的最大可能差異。
 
-\subsubsection{（二）線條長度（lenth）對於數位鏡面的影響}
+此外，為了統一不同參數下的測試條件，我選用了三組特定的測試圖片，分別為白藍交錯、紅黑交錯與紅黃交錯的圖案，作為數位鏡面的輸入來源。具體圖片如圖\ref{fig:test_img1} 所示。
 
-\subsubsection{（三）解析度（resolution）對於數位鏡面的影響}
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/blank_blue.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/blank_red.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/blank_Yellow.png}
+  \end{minipage}
+  \caption{測試照片}\label{fig:test_img1}
+\end{figure}
 
-\subsection{五、實驗二：不同場景對於數位鏡面的影響}
+在實驗中，數據的分布與型態應該會如圖\ref{fig:test_img2}。為判定穩定狀態，我將數據切分為 20 組，出現頻率最高的組別便為穩定狀態的指標，當實驗數據收斂至該組別時，便表示實驗已進入穩定狀態。
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/SAD_expriment_example_1.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/SAD_expriment_example_2.png}
+  \end{minipage}
+  \caption{實驗結果範例數據}\label{fig:test_img2}
+\end{figure}
+
+\subsubsection{（一）不同參數下數位鏡面的穩定狀態}
+
+\subsubsection{（二）不同參數下數位鏡面達到穩定狀態所需的時間}
+
+\subsection{四、實驗二：不同場景對於數位鏡面的影響}
 
 \subsubsection{（一）背景顏色對於數位鏡面的影響}
 
-顏色差異與顏色數量
-
-\subsubsection{（二）線條長度（lenth）對於數位鏡面的影響}
-
-\subsubsection{（三）解析度（resolution）對於數位鏡面的影響}
+顏色差異與顏色數量與方塊大小
 
 \newpage
+
 \section{肆、研究結果}
 
 \subsection{一、研究一：數位鏡面的時間複雜度}
@@ -210,8 +272,11 @@ Python、Opencv、Numpy、Plt、Anaconda、Ipynb
 \newpage
 \section{柒、參考文獻資料}
 
-https://www.husart.net/?p=372 丹尼爾羅森
 
-https://github.com/happpycorn/Mirror_Line 我的數位鏡面
+% \noindent
+% \href{https://www.husart.net/?p=372}{丹尼爾羅森的數位鏡面} \\
+
+% \noindent
+% \href{https://github.com/happpycorn/Mirror_Line}{我的數位鏡面}
 
 \end{document}

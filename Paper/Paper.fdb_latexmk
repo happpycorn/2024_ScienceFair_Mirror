@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 0 "Paper.xdv" "Paper.pdf" "Paper" 0 -1
-  "Paper.xdv" 1733708093 32620 16c309bd92fbec931e42da20d99cd1f5 "xelatex"
+["xdvipdfmx"] 1734018624.72567 "Paper.xdv" "Paper.pdf" "Paper" 1734018626.42944 0
+  "Paper.xdv" 1734018624 51160 d59f28b422364de004a33d34681afd0e "xelatex"
   (generated)
   "Paper.pdf"
   (rewritten before read)
-["xelatex"] 1733708091.04601 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1733708094.02616 2
+["xelatex"] 1734018622.38622 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734018626.41986 0
   "C:/Users/happp/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732754882 37546050 c464b94ed3a2d1a30e8332298b356bdc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -31,6 +31,7 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1705273578 5048 425739d70251273bf93e3d51f3c40048 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1705273578 8449 f07039d8e4e89f21078d9b5137579bfc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/base/ts1cmr.fd" 1705273578 2430 fce77d7e103eb98b6c4d486ae1d466c0 ""
+  "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty" 1696169587 12494 0c0cdb824278a4d51cefeb2e79901315 ""
@@ -56,11 +57,16 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Paper.aux" 1733708093 7045 32b4bdaaf7fed3e21e716056d0704677 "xelatex"
-  "Paper.tex" 1733708085 8637 d329242b4fa3820404dab8e08d682eb4 ""
-  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1733708085 8637 d329242b4fa3820404dab8e08d682eb4 ""
+  "Paper.aux" 1734018624 6613 63ef8789d340b7c7e411e088b92c6343 "xelatex"
+  "Paper.tex" 1734018621 13132 0a743546b23eaa655c04b8d92ad294e3 ""
+  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734018621 13132 0a743546b23eaa655c04b8d92ad294e3 ""
   "img//mirror_example_1.jpg" 1733703810 863346 30520c63d9d138cec963917195dab006 ""
   "img//program_flaw.jpg" 1733707913 428912 a5acaf7d0a474044973f7c1bc9fa8843 ""
+  "img/SAD_expriment_example_1.png" 1734018113 110670 9ebd0e0b7bf327a1e0044e90114306bb ""
+  "img/SAD_expriment_example_2.png" 1734018489 98426 2cfa105e4770f3d6ffd142858677b5a9 ""
+  "img/blank_Yellow.png" 1732462847 10905 20d035a51392e02bcaa122455548ebbc ""
+  "img/blank_blue.png" 1732462162 11205 5c6551a369595b6b056922de58d3e140 ""
+  "img/blank_red.png" 1732462222 8920 6ea46a4af953c6389ea3c8b907300806 ""
   "img/mirror_example_2.jpg" 1733703818 631924 a69c7fc02c5106a48404a9f76dc02d29 ""
   "img/mirror_example_3.jpg" 1733406791 545636 1715a8170747d41805e3747ddd951753 ""
   (generated)
