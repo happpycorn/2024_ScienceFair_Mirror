@@ -8,19 +8,19 @@ from Modules.Modules import MirrorFrame
 TEST_TIME = 10
 TEST_COUNT = 100
 
-FLOAD = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
+FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
 
 BLANKS = {
-    'R' : os.path.join(FLOAD, r'Blank\blank_red.png'),
-    'Y' : os.path.join(FLOAD, r'Blank\blank_yellow.png'),
-    'B' : os.path.join(FLOAD, r'Blank\blank_blue.png')
+    'R' : os.path.join(FOLDER, r'Blank\blank_red.png'),
+    'Y' : os.path.join(FOLDER, r'Blank\blank_yellow.png'),
+    'B' : os.path.join(FOLDER, r'Blank\blank_blue.png')
 }
 
 line_width = int(sys.argv[1])
 line_length = int(sys.argv[2])
 resolution = int(sys.argv[3])
 
-SAVE_PATH = os.path.join(FLOAD, f'data_{line_width}.npy')
+SAVE_PATH = os.path.join(FOLDER, f'data_{line_width}.npy')
 
 mirrorFrame = MirrorFrame(
 
