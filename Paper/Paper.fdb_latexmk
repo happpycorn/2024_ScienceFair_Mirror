@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1734018624.72567 "Paper.xdv" "Paper.pdf" "Paper" 1734018626.42944 0
-  "Paper.xdv" 1734018624 51160 d59f28b422364de004a33d34681afd0e "xelatex"
+["xdvipdfmx"] 1734101654.523 "Paper.xdv" "Paper.pdf" "Paper" 1734101656.26966 0
+  "Paper.xdv" 1734101654 51260 22b9ec96390de6f6e3f8c1b5de3e8c0e "xelatex"
   (generated)
   "Paper.pdf"
   (rewritten before read)
-["xelatex"] 1734018622.38622 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734018626.41986 0
+["xelatex"] 1734101651.90459 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734101656.26032 0
   "C:/Users/happp/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732754882 37546050 c464b94ed3a2d1a30e8332298b356bdc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -57,9 +57,9 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Paper.aux" 1734018624 6613 63ef8789d340b7c7e411e088b92c6343 "xelatex"
-  "Paper.tex" 1734018621 13132 0a743546b23eaa655c04b8d92ad294e3 ""
-  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734018621 13132 0a743546b23eaa655c04b8d92ad294e3 ""
+  "Paper.aux" 1734101654 6613 63ef8789d340b7c7e411e088b92c6343 "xelatex"
+  "Paper.tex" 1734101650 13151 659c6849a09c1a8b33b4cc8e7c27feb3 ""
+  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734101650 13151 659c6849a09c1a8b33b4cc8e7c27feb3 ""
   "img//mirror_example_1.jpg" 1733703810 863346 30520c63d9d138cec963917195dab006 ""
   "img//program_flaw.jpg" 1733707913 428912 a5acaf7d0a474044973f7c1bc9fa8843 ""
   "img/SAD_expriment_example_1.png" 1734018113 110670 9ebd0e0b7bf327a1e0044e90114306bb ""
