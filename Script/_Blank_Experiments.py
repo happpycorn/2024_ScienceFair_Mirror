@@ -1,45 +1,107 @@
+import os
 import cv2
-import numpy as np
-import pandas as pd
+import sys
 from tqdm import tqdm
+import numpy as np
 from Modules.Modules import MirrorFrame
 
-test_time = 10
-test_count = 100
+TEST_TIME = 10
+TEST_COUNT = 100
 
-blank1 = r'Blank\blank_yellow.png' 
-blank2 = r'Blank\blank_blue.png' 
+FLOAD = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
 
-save_path = r'exp_data.csv'
+BLANKS = {
+    'R' : os.path.join(FLOAD, r'Blank\blank_red.png'),
+    'Y' : os.path.join(FLOAD, r'Blank\blank_yellow.png'),
+    'B' : os.path.join(FLOAD, r'Blank\blank_blue.png')
+}
+
+line_width = int(sys.argv[1])
+line_length = int(sys.argv[2])
+resolution = int(sys.argv[3])
+
+SAVE_PATH = os.path.join(FLOAD, f'data_{line_width}.npy')
 
 mirrorFrame = MirrorFrame(
 
-    line_width=5, 
-    line_length=100, 
-    resolution=100
+    line_width=line_width*2+1, 
+    line_length=line_length*25+1, 
+    resolution=resolution*25+10
 )
 
 coords = mirrorFrame.generateCoords()
-
-data = {} 
-
 max_value = 255*mirrorFrame.size_x*mirrorFrame.size_y*3
 
-num = 0
+def dataInit():
 
-for i in tqdm(range(test_time)):
+    dtype = [
+        ("ID", int),
+        ("RY", float, (10, 100)), 
+        ("YR", float, (10, 100)), 
+        ("YB", float, (10, 100)),
+        ("BY", float, (10, 100)), 
+        ("BR", float, (10, 100)), 
+        ("RB", float, (10, 100))
+    ]
 
-    blank_name = blank1 if i % 2 == 0 else blank2
+    data = np.zeros(1, dtype=dtype)
+
+    data["ID"] = line_width * 10000 + line_length * 100 + resolution
+
+    return data
+
+data = dataInit()
+
+TEST_ORDER = [('RY', 'YR'), ('YB', 'BY'), ('BR', 'RB')]
+
+for blank1, blank2 in TEST_ORDER:
+
+    # init
+
+    blank_name = BLANKS[blank2[0]]
     mirrorFrame.frame = frame = cv2.imread(blank_name)
-    data[i] = [0] * test_count
 
-    for j in range(test_count):
+    for _ in tqdm(range(TEST_COUNT)):
 
         for coord in coords : mirrorFrame.drawLine(coord)
 
-        frame_minus = np.abs(frame.astype(np.int32)-mirrorFrame.canvas.astype(np.int32))
+    for i in tqdm(range(TEST_TIME)):
 
-        data[i][j] = np.sum(frame_minus)/max_value
+        # blank 1
 
-df = pd.DataFrame(data)
-df.to_csv(save_path)
+        blank_name = BLANKS[blank1[0]]
+        mirrorFrame.frame = frame = cv2.imread(blank_name)
+
+        for j in range(TEST_COUNT):
+
+            for coord in coords : mirrorFrame.drawLine(coord)
+
+            frame_minus = np.abs(frame.astype(np.int32)-mirrorFrame.canvas.astype(np.int32))
+
+            data[blank1][0][i][j] = np.sum(frame_minus)/max_value
+        
+        # blank 2
+
+        blank_name = BLANKS[blank2[0]]
+        mirrorFrame.frame = frame = cv2.imread(blank_name)
+
+        for j in range(TEST_COUNT):
+
+            for coord in coords : mirrorFrame.drawLine(coord)
+
+            frame_minus = np.abs(frame.astype(np.int32)-mirrorFrame.canvas.astype(np.int32))
+
+            data[blank2][0][i][j] = np.sum(frame_minus)/max_value
+
+if os.path.exists(SAVE_PATH):
+    # 如果文件存在，讀取現有數據並合併
+    existing_data = np.load(SAVE_PATH, allow_pickle=True)
+    combined_data = np.concatenate([existing_data, data])
+else:
+    # 如果文件不存在，直接保存新數據
+    combined_data = data
+
+# 保存合併後的數據
+np.save(SAVE_PATH, combined_data)
+
+print(data["ID"])
