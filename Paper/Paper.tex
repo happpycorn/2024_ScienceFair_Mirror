@@ -152,13 +152,19 @@ SAD = \sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, y] - s_2[x, y] \right|
 
 \subsection{一、研究架構圖}
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{img//research_flaw.png}
+  \caption{研究架構圖}
+\end{figure}
+
 \subsection{二、實驗一：各參數對數位鏡面執行速度的影響}
 
-為了分析數位鏡面程式的執行速度及其影響因素，本實驗記錄程式的執行時間，並探討可調整參數（線條寬度、線條長度及解析度）對每幀渲染時間與單條線條繪製時間的影響。實驗設計如表\ref{table:sc2_des} 所示。
+為了分析數位鏡面程式的執行速度及其影響因素，本實驗記錄程式的執行時間，並探討可調整參數（線條寬度、線條長度及解析度）對每幀渲染時間與單條線條繪製時間的影響。實驗設計如表\ref{table:sc1_des} 所示。
 
 \begin{table}[h]
   \centering
-  \caption{執行速度與參數關係的實驗設計}\label{table:sc2_des}
+  \caption{執行速度與參數關係的實驗設計}\label{table:sc1_des}
   \begin{tabular}{p{0.2cm}p{3.5cm}p{4.5cm}p{6cm}}
     \toprule
       & 操縱變因 & 應變變因 & 控制變因 \\ 
@@ -172,17 +178,36 @@ SAD = \sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, y] - s_2[x, y] \right|
   \end{tabular}
 \end{table}
 
+在實驗設計中，每組實驗將重複執行 100 次，並計算所得結果的平均值以作為最終數據。非操縱變因的參數均固定為預設初始值，其中線條寬度（width）設定為 5，線條長度（length）設定為 100，解析度（resolution）設定為 100。
+
 \subsection{三、實驗二：各參數對數位鏡面顯示畫面的影響}
 
-數位鏡面在繪製過程中，當畫面發生變化時，所呈現的內容會逐漸接近現實場景，直至達到一定相似程度後停止變化。我將這一階段稱為穩定狀態。
+數位鏡面在繪製過程中，當畫面發生變化時，所呈現的內容會逐漸接近現實場景，直至達到一定相似程度後停止變化。這一階段被稱為穩定狀態。本實驗主要觀察兩項指標：一是數位鏡面進入穩定狀態後與現實的差異，二是畫面變動後達到穩定狀態所需的時間。
 
-為了量化數位鏡面與現實場景之間的相似程度，我使用 SAD 演算法，並觀察兩項數據：一是數位鏡面進入穩定狀態後與現實的差異，二是畫面變動後達到穩定狀態所需的時間。為更直觀地表達 SAD 的計算結果，我將其歸一化為百分比形式。具體方法為將 SAD 值除以理論最大值，公式如下：
+在實驗中，我將數值分別設定為以下範圍：線條寬度（width）為 1 至 41，間隔 2；線條長度（length）為 1 至 501，間隔 25；解析度（resolution）為 10 至 510，間隔 25。值得說明的是，解析度的起始值設定為 10，這是基於實驗一的結果推算得知，若將解析度設為 1，運算時間將增加至預設值的 $10^4$ 倍，不僅超出實際應用的可能性，也難以有效控制實驗時間。因此，解析度選擇從 10 開始，該設定的運算時間約為預設值的 $10^2$ 倍，既符合實驗條件要求，也更接近實際應用場景。
+
+為了量化數位鏡面與現實場景之間的相似程度，本研究採用前述文獻探討中提及的 SAD 演算法。為使計算結果更具直觀性，將 SAD 值歸一化為百分比形式，其方法為將 SAD 值除以理論最大值，公式如下。其中，$X$ 和 $Y$ 分別表示圖片的寬度與高度，$255$ 為像素值的最大可能差異。
 
 \[
 SAD_{\text{normalized}} = \frac{\sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, y] - s_2[x, y] \right|}{X \cdot Y \cdot 255}
 \]
 
-其中，$X$ 和 $Y$ 分別為圖片的寬度與高度，$255$ 為像素值的最大可能差異。
+SAD 結果的形態預期與分布如圖\ref{fig:test_img2} 所示。為判定穩定狀態，數據被劃分為 20 組，並將出現頻率最高的組別作為穩定狀態的指標。當實驗數據逐漸收斂至該組別，即可判定實驗已達穩定狀態。
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/SAD_expriment_example_1.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/SAD_expriment_example_2.png}
+  \end{minipage}
+  \caption{實驗結果範例數據}\label{fig:test_img2}
+
+\end{figure}
 
 此外，為了統一不同參數下的測試條件，我選用了三組特定的測試圖片，分別為白藍交錯、紅黑交錯與紅黃交錯的圖案，作為數位鏡面的輸入來源。具體圖片如圖\ref{fig:test_img1} 所示。
 
@@ -205,27 +230,28 @@ SAD_{\text{normalized}} = \frac{\sum_{x=0}^{X-1} \sum_{y=0}^{Y-1} \left| s_1[x, 
   \caption{測試照片}\label{fig:test_img1}
 \end{figure}
 
-在實驗中，數據的分布與形態預期如圖\ref{fig:test_img2} 所示。為了判定穩定狀態，我將數據切分為 20 組，並以出現頻率最高的組別作為穩定狀態的指標。當實驗數據逐漸收斂至該組別時，即表示實驗已進入穩定狀態。
+\subsection{四、實驗三：不同場景對於數位鏡面的影響}
 
-\begin{figure}[htbp]
+為探討不同場景對於數位鏡面的影響，我將場景可能不同的點列為：總體場景的複雜程度、總體場景的顏色數量與總體的顏色差異程度。
+
+為了模擬這三種不同的向度，我將製作幾種圖片分別對應他們。總體場景的複雜程度我透過將畫面切分成 12 塊、48 塊、192 塊的方式模擬。總體場景的顏色數量我將其分成 2 種、3 種（紅、綠、藍）與 6 種（紅、綠、藍、黃、橘、紫）顏色。
+
+總體的顏色差異程度因為在顏色多的狀況下難以量化，因此只對 2 種顏色的組別做測試，顏色分別是黑搭配紅、綠、藍、黃、橘、紫與白七色。
+
+實驗設計表如下：
+
+\begin{table}[h]
   \centering
-  \begin{minipage}[b]{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/SAD_expriment_example_1.png}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[b]{0.45\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{img/SAD_expriment_example_2.png}
-  \end{minipage}
-  \caption{實驗結果範例數據}\label{fig:test_img2}
-\end{figure}
-
-\subsubsection{（一）不同參數下數位鏡面的穩定狀態}
-
-\subsubsection{（二）不同參數下數位鏡面達到穩定狀態所需的時間}
-
-\subsection{四、實驗二：不同場景對於數位鏡面的影響}
+  \caption{不同場景複雜程度與顏色數量對於數位鏡面的影響}\label{table:sc3_des}
+  \begin{tabular}{p{2cm}p{2cm}p{2cm}p{2cm}}
+    \toprule
+      & 12 塊 & 48 塊 & 192 塊 \\ 
+    \midrule
+    三種 & & & \\ 
+    六種 & & & \\ 
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \subsubsection{（一）背景顏色對於數位鏡面的影響}
 

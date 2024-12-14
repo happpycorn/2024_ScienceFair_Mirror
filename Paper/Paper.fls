@@ -112,6 +112,15 @@ INPUT C:\Users\happp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cme
 INPUT C:\Users\happp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\happp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\happp\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT .\img\\research_flaw.png
+INPUT .\img\\research_flaw.png
+INPUT .\img\\research_flaw.png
+INPUT .\img\SAD_expriment_example_1.png
+INPUT .\img\SAD_expriment_example_1.png
+INPUT .\img\SAD_expriment_example_1.png
+INPUT .\img\SAD_expriment_example_2.png
+INPUT .\img\SAD_expriment_example_2.png
+INPUT .\img\SAD_expriment_example_2.png
 INPUT .\img\blank_blue.png
 INPUT .\img\blank_blue.png
 INPUT .\img\blank_blue.png
@@ -121,10 +130,4 @@ INPUT .\img\blank_red.png
 INPUT .\img\blank_Yellow.png
 INPUT .\img\blank_Yellow.png
 INPUT .\img\blank_Yellow.png
-INPUT .\img\SAD_expriment_example_1.png
-INPUT .\img\SAD_expriment_example_1.png
-INPUT .\img\SAD_expriment_example_1.png
-INPUT .\img\SAD_expriment_example_2.png
-INPUT .\img\SAD_expriment_example_2.png
-INPUT .\img\SAD_expriment_example_2.png
 INPUT Paper.aux

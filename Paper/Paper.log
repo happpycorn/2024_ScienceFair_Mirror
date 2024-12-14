@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.11.28)  13 DEC 2024 22:54
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.11.28)  14 DEC 2024 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -470,30 +470,32 @@ File: img/mirror_example_3.jpg Graphic file (type bmp)
 File: img//program_flaw.jpg Graphic file (type bmp)
 <img//program_flaw.jpg>
  [3] [4] [5]
+File: img//research_flaw.png Graphic file (type bmp)
+<img//research_flaw.png>
+ [6]
+File: img/SAD_expriment_example_1.png Graphic file (type bmp)
+<img/SAD_expriment_example_1.png>
+File: img/SAD_expriment_example_2.png Graphic file (type bmp)
+<img/SAD_expriment_example_2.png>
 File: img/blank_blue.png Graphic file (type bmp)
 <img/blank_blue.png>
 File: img/blank_red.png Graphic file (type bmp)
 <img/blank_red.png>
 File: img/blank_Yellow.png Graphic file (type bmp)
 <img/blank_Yellow.png>
- [6]
-File: img/SAD_expriment_example_1.png Graphic file (type bmp)
-<img/SAD_expriment_example_1.png>
-File: img/SAD_expriment_example_2.png Graphic file (type bmp)
-<img/SAD_expriment_example_2.png>
- [7] [8] [9] [10] [11] (Paper.aux)
+ [7] [8] [9] [10] [11] [12] (Paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8619 strings out of 409617
- 224215 string characters out of 5774012
+ 8629 strings out of 409617
+ 224471 string characters out of 5774012
  1943191 words of memory out of 5000000
- 30633 multiletter control sequences out of 15000+600000
+ 30642 multiletter control sequences out of 15000+600000
  562197 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,10n,93p,377b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,389b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Paper.xdv (11 pages, 51260 bytes).
+Output written on Paper.xdv (12 pages, 62200 bytes).
