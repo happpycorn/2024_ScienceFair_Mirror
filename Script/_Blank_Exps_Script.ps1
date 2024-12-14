@@ -29,7 +29,7 @@ foreach ($i in $range1) {
                             -PercentComplete $percentComplete
 
             # Limit the number of concurrent jobs
-            while ((Get-Job -State Running).Count -ge 8) {
+            while ((Get-Job -State Running).Count -ge 12) {
                 Start-Sleep -Milliseconds 500
             }
         }
