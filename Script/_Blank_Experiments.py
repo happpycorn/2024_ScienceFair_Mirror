@@ -20,12 +20,12 @@ line_width = int(sys.argv[1])
 line_length = int(sys.argv[2])
 resolution = int(sys.argv[3])
 
-SAVE_PATH = os.path.join(FOLDER, f'data_{line_width}.npy')
+SAVE_PATH = os.path.join(FOLDER, f'data_{resolution}.npy')
 
 mirrorFrame = MirrorFrame(
 
     line_width=line_width*2+1, 
-    line_length=line_length*25+1, 
+    line_length=line_length*10+1, 
     resolution=resolution*25+10
 )
 

@@ -1,7 +1,7 @@
 # batch_runner_with_progress.ps1
 
 # Define parameter ranges
-$range1 = 0..20
+$range1 = 20..0
 $range2 = 0..20
 $range3 = 0..20
 
@@ -17,7 +17,7 @@ foreach ($i in $range1) {
             Start-Job -ScriptBlock {
                 param($a, $b, $c)
                 python C:\Users\happp\Documents\2024_ScienceFair_Mirror\Script\_Blank_Experiments.py $a $b $c
-            } -ArgumentList $i, $j, $k
+            } -ArgumentList $k, $j, $i
 
             # Increment completed task count and update progress
             $completedTasks++
