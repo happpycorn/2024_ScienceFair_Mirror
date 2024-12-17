@@ -1,7 +1,7 @@
 # batch_runner_with_progress.ps1
 
 # Define parameter ranges
-$range1 = 20..0
+$range1 = 10..0
 $range2 = 0..20
 $range3 = 0..20
 

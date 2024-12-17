@@ -4,7 +4,7 @@ import numpy as np
 FRAME_SIZE_X = 800
 FRAME_SIZE_Y = int(FRAME_SIZE_X * 0.75)
 
-RESOLUTION = 100
+RESOLUTION = 50
 
 blank = np.zeros((FRAME_SIZE_Y, FRAME_SIZE_X, 3), dtype=np.uint8)
 
@@ -15,9 +15,9 @@ for row in range(0, FRAME_SIZE_X, RESOLUTION):
         x_start, x_end = col, col + RESOLUTION
 
         if (row+col)//RESOLUTION % 2 != 0:
-            blank[y_start:y_end, x_start:x_end] = (0, 255, 255)
+            blank[y_start:y_end, x_start:x_end] = (255, 0, 0)
         else:
             blank[y_start:y_end, x_start:x_end] = (0, 0, 0)
 
 
-cv2.imwrite("Blank/blank.png", blank)
+cv2.imwrite(r"Blank/2_192/blank.png", blank)
