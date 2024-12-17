@@ -1,7 +1,7 @@
 # batch_runner_with_progress.ps1
 
 # Define parameter ranges
-$range1 = 10..0
+$range1 = 8..0
 $range2 = 0..20
 $range3 = 0..20
 
@@ -29,7 +29,7 @@ foreach ($i in $range1) {
                             -PercentComplete $percentComplete
 
             # Limit the number of concurrent jobs
-            while ((Get-Job -State Running).Count -ge 12) {
+            while ((Get-Job -State Running).Count -ge 10) {
                 Start-Sleep -Milliseconds 500
             }
         }
