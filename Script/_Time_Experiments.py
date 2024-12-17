@@ -93,7 +93,7 @@ exp_5 = np.zeros((TEST_RANGE, TEST_TIME), dtype=float)
 
 for i in tqdm(range(TEST_RANGE)):
 
-    mirrorFrame.resolution = i*10+1
+    mirrorFrame.resolution = i*25+10
 
     coords = mirrorFrame.generateCoords()
 
