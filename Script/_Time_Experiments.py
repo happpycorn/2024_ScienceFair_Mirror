@@ -91,13 +91,13 @@ mirrorFrame.line_length = 100
 
 exp_5 = np.zeros((TEST_RANGE, TEST_TIME), dtype=float)
 
-for i in tqdm(range(TEST_TIME)):
+for i in tqdm(range(TEST_RANGE)):
 
     mirrorFrame.resolution = i*10+1
 
     coords = mirrorFrame.generateCoords()
 
-    for j in range(100):
+    for j in range(range(TEST_TIME)):
 
         start_time = time.time()
 
