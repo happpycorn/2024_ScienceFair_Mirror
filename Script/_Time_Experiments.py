@@ -97,7 +97,7 @@ for i in tqdm(range(TEST_RANGE)):
 
     coords = mirrorFrame.generateCoords()
 
-    for j in range(range(TEST_TIME)):
+    for j in range(TEST_TIME):
 
         start_time = time.time()
 
