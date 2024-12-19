@@ -7,7 +7,7 @@ from Modules.Modules import MirrorFrame
 TEST_TIME = 10
 TEST_COUNT = 100
 
-FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror\Blank\6'
+FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror\Blank\3'
 
 BLANKS = [f for f in os.listdir(FOLDER)]
 
@@ -42,7 +42,7 @@ for index, blank in enumerate(BLANKS):
 
             frame_minus = np.abs(frame.astype(np.int32)-mirrorFrame.canvas.astype(np.int32))
 
-            data[blank[0]][i][j] = np.sum(frame_minus)/max_value
+            data[blank[0]][i, j] = np.sum(frame_minus)/max_value
 
 # 保存合併後的數據
 np.save(SAVE_PATH, data)
