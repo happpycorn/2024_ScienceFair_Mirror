@@ -105,7 +105,7 @@ for i in tqdm(range(TEST_RANGE)):
 
         end_time = time.time()
 
-        exp_2[i][j] = end_time - start_time
+        exp_5[i][j] = end_time - start_time
 
 # 保存合併後的數據
 np.save(SAVE_PATH, [exp_1, exp_2, exp_3, exp_4, exp_5])
