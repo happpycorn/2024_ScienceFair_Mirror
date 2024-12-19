@@ -3,7 +3,7 @@ import numpy as np
 
 FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
 
-data = np.full((21, 21, 21, 10, 2), -1)
+data = np.full((21, 21, 21, 10, 2), -1, dtype=float)
 
 exp_types = ['BR', 'BY', 'RB', 'RY', 'YB', 'YR']
 

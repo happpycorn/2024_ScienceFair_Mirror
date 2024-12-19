@@ -1,11 +1,8 @@
 import os 
 import numpy as np
+from tqdm import tqdm
 
 FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
-
-FILE_NAME = r'FinishData\data_2.npy'
-
-origin_data = np.load(os.path.join(FOLDER, FILE_NAME))
 
 exp_types = ['BR', 'BY', 'RB', 'RY', 'YB', 'YR']
 
@@ -32,19 +29,25 @@ def Histograms(data, num_bins=20):
 
         if most_popular_range[0] <= value < most_popular_range[1] : return i, most_popular_range[1]
 
-for exp_type in exp_types:
+for i in tqdm(range(2, 21)):
 
-    preprocess_data = np.load(os.path.join(FOLDER, f'PreprocessData\\data_{exp_type}.npy'))
+    file_name = f'FinishData\\data_{i}.npy'
 
-    for row in origin_data:
+    origin_data = np.load(os.path.join(FOLDER, file_name))
 
-        w, l, r = findID(row)
+    for exp_type in exp_types:
 
-        for i in range(10):
+        preprocess_data = np.load(os.path.join(FOLDER, f'PreprocessData\\data_{exp_type}.npy'))
 
-            index, stay_point = Histograms(row[exp_type][i])
+        for row in origin_data:
 
-            preprocess_data[r][l][w][i][0] = index
-            preprocess_data[r][l][w][i][1] = stay_point
+            w, l, r = findID(row)
 
-    np.save(os.path.join(FOLDER, f'PreprocessData\\data_{exp_type}.npy'), preprocess_data)
+            for i in range(10):
+
+                index, stay_point = Histograms(row[exp_type][i])
+
+                preprocess_data[r][l][w][i][0] = index
+                preprocess_data[r][l][w][i][1] = stay_point
+
+        np.save(os.path.join(FOLDER, f'PreprocessData\\data_{exp_type}.npy'), preprocess_data)
