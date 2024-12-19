@@ -3,7 +3,7 @@ import numpy as np
 
 FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
 
-FILE_NAME = r'FinishData\data_4.npy'
+FILE_NAME = r'FinishData\data_2.npy'
 
 origin_data = np.load(os.path.join(FOLDER, FILE_NAME))
 
