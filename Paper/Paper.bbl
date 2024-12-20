@@ -1,0 +1,383 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{BULL2021107}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d1e44b014796e3decf59300c202aa8f}{%
+           family={Bull},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7d1e44b014796e3decf59300c202aa8f}{%
+           family={Bull},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{fullhash}{4656a9623859e8a803be9b36842c5518}
+      \strng{bibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authorbibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authornamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authorfullhash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editorbibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editornamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editorfullhash}{4656a9623859e8a803be9b36842c5518}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Intelligent Image and Video Compression (Second Edition)}
+      \field{edition}{Second Edition}
+      \field{isbn}{978-0-12-820353-8}
+      \field{title}{Chapter 4 - Digital picture formats and representations}
+      \field{year}{2021}
+      \field{pages}{107\bibrangedash 142}
+      \range{pages}{36}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-820353-8.00013-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B978012820353800013X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B978012820353800013X
+      \endverb
+      \keyw{Video formats,color spaces,color space transforms,gamma correction,Bayer filter,color filter array}
+    \endentry
+    \entry{cormen01introduction}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=835b8c52757d98c15859b416316d9820}{%
+           family={Cormen},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a389dea91a76366c4b4af5f52a928a76}{%
+           family={Leiserson},
+           familyi={L\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a964821f97ee17f8bb285bc61c52899}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={Ronald\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc78426660400760f77758aec45e71a8}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Clifford},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{fullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{bibnamehash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{authorbibnamehash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{authornamehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{authorfullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{0262032937}
+      \field{title}{Introduction to Algorithms}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb http://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262032937%3FSubscriptionId%3D13CT5CVB80YFWJEPWS02%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0262032937
+      \endverb
+      \verb{url}
+      \verb http://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262032937%3FSubscriptionId%3D13CT5CVB80YFWJEPWS02%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0262032937
+      \endverb
+      \keyw{algorithm algorithms computer data design paper-cpm programming science structures}
+    \endentry
+    \entry{github_mirror}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a57f8810bc86efa6204120896dd623d8}{%
+           family={happycorn},
+           familyi={h\bibinitperiod}}}%
+      }
+      \strng{namehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{fullhash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{bibnamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authorbibnamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authornamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authorfullhash}{a57f8810bc86efa6204120896dd623d8}
+      \field{sortinit}{h}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{數位鏡面-線}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://github.com/happpycorn/Mirror_Line
+      \endverb
+      \verb{url}
+      \verb https://github.com/happpycorn/Mirror_Line
+      \endverb
+    \endentry
+    \entry{husart}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=176af04d71c6cf0d41958de788bffaf7}{%
+           family={丹尼爾·羅森},
+           familyi={丹\bibinitperiod}}}%
+      }
+      \strng{namehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{fullhash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{bibnamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authorbibnamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authornamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authorfullhash}{176af04d71c6cf0d41958de788bffaf7}
+      \field{sortinit}{丹}
+      \field{sortinithash}{2b856c310df78dbb0f23d3b3e4dd855b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{2017 機場捷運公共藝術專案－交．感知區－Daniel Rozin}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.husart.net/?p=372
+      \endverb
+      \verb{url}
+      \verb https://www.husart.net/?p=372
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{BULL2021107}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7d1e44b014796e3decf59300c202aa8f}{%
+           family={Bull},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7d1e44b014796e3decf59300c202aa8f}{%
+           family={Bull},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{fullhash}{4656a9623859e8a803be9b36842c5518}
+      \strng{bibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authorbibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authornamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{authorfullhash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editorbibnamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editornamehash}{4656a9623859e8a803be9b36842c5518}
+      \strng{editorfullhash}{4656a9623859e8a803be9b36842c5518}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Intelligent Image and Video Compression (Second Edition)}
+      \field{edition}{Second Edition}
+      \field{isbn}{978-0-12-820353-8}
+      \field{title}{Chapter 4 - Digital picture formats and representations}
+      \field{year}{2021}
+      \field{pages}{107\bibrangedash 142}
+      \range{pages}{36}
+      \verb{doi}
+      \verb https://doi.org/10.1016/B978-0-12-820353-8.00013-X
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B978012820353800013X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B978012820353800013X
+      \endverb
+      \keyw{Video formats,color spaces,color space transforms,gamma correction,Bayer filter,color filter array}
+    \endentry
+    \entry{cormen01introduction}{book}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=835b8c52757d98c15859b416316d9820}{%
+           family={Cormen},
+           familyi={C\bibinitperiod},
+           given={Thomas\bibnamedelima H.},
+           giveni={T\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a389dea91a76366c4b4af5f52a928a76}{%
+           family={Leiserson},
+           familyi={L\bibinitperiod},
+           given={Charles\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3a964821f97ee17f8bb285bc61c52899}{%
+           family={Rivest},
+           familyi={R\bibinitperiod},
+           given={Ronald\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc78426660400760f77758aec45e71a8}{%
+           family={Stein},
+           familyi={S\bibinitperiod},
+           given={Clifford},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{fullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{bibnamehash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{authorbibnamehash}{10f004e08c7c03d98be0da1231a869ce}
+      \strng{authornamehash}{c251cdfd036d9474565c517e73c19c5d}
+      \strng{authorfullhash}{10f004e08c7c03d98be0da1231a869ce}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{0262032937}
+      \field{title}{Introduction to Algorithms}
+      \field{year}{2001}
+      \verb{urlraw}
+      \verb http://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262032937%3FSubscriptionId%3D13CT5CVB80YFWJEPWS02%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0262032937
+      \endverb
+      \verb{url}
+      \verb http://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262032937%3FSubscriptionId%3D13CT5CVB80YFWJEPWS02%26tag%3Dws%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0262032937
+      \endverb
+      \keyw{algorithm algorithms computer data design paper-cpm programming science structures}
+    \endentry
+    \entry{github_mirror}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a57f8810bc86efa6204120896dd623d8}{%
+           family={happycorn},
+           familyi={h\bibinitperiod}}}%
+      }
+      \strng{namehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{fullhash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{bibnamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authorbibnamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authornamehash}{a57f8810bc86efa6204120896dd623d8}
+      \strng{authorfullhash}{a57f8810bc86efa6204120896dd623d8}
+      \field{sortinit}{h}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{數位鏡面-線}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://github.com/happpycorn/Mirror_Line
+      \endverb
+      \verb{url}
+      \verb https://github.com/happpycorn/Mirror_Line
+      \endverb
+    \endentry
+    \entry{husart}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=176af04d71c6cf0d41958de788bffaf7}{%
+           family={丹尼爾·羅森},
+           familyi={丹\bibinitperiod}}}%
+      }
+      \strng{namehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{fullhash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{bibnamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authorbibnamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authornamehash}{176af04d71c6cf0d41958de788bffaf7}
+      \strng{authorfullhash}{176af04d71c6cf0d41958de788bffaf7}
+      \field{sortinit}{丹}
+      \field{sortinithash}{2b856c310df78dbb0f23d3b3e4dd855b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{2017 機場捷運公共藝術專案－交．感知區－Daniel Rozin}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.husart.net/?p=372
+      \endverb
+      \verb{url}
+      \verb https://www.husart.net/?p=372
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
