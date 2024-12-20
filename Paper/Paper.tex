@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[utf8]{inputenc}     % 設定字符編碼為 UTF-8
+% \usepackage[utf8]{inputenc}     % 設定字符編碼為 UTF-8
 \usepackage{subcaption}         % 支援子圖
 \usepackage{fontspec}           % 支持自定義字體
 \usepackage{setspace}           % 行距設定
@@ -48,6 +48,12 @@
 \renewcommand{\figurename}{圖} % figurename -> 圖
 \renewcommand{\tablename}{表}  % tablename -> 表
 
+% 在導言區使用 biblatex 套件，設置 APA 樣式
+\usepackage[backend=biber, style=apa]{biblatex}
+
+% 指定你的 .bib 文件
+\addbibresource{reference.bib}
+
 \begin{document}
 
 \section{摘要}
@@ -58,7 +64,7 @@
 
 \subsection{一、研究動機}
 
-在高一時，我完成了一個名為「數位鏡面」的專案，靈感源自丹尼爾．羅森（2017）在桃園機場捷運的一系列藝術品。這些作品利用鏡頭捕捉現實畫面，經過電腦計算後，以獨特的方式呈現影像。其中，有一幅作品以線條形式重構畫面，宛如一面極具創意的鏡子（如圖\ref{fig:mirror_example_1}），而我的專案正是以此為藍本進行模仿與實現。
+在高一時，我完成了一個名為「數位鏡面」的專案，靈感源自\textcite{husart}在桃園機場捷運的一系列藝術品。這些作品利用鏡頭捕捉現實畫面，經過電腦計算後，以獨特的方式呈現影像。其中，有一幅作品以線條形式重構畫面，宛如一面極具創意的鏡子（如圖\ref{fig:mirror_example_1}），而我的專案正是以此為藍本進行模仿與實現。
 
 \begin{figure}[htbp]
   \centering
@@ -80,7 +86,7 @@
 
 \subsubsection{（一）數位鏡面}
 
-數位鏡面最初是丹尼爾·羅森（2017）在機場捷運展示的一系列藝術作品。這些作品透過鏡頭捕捉現實世界的影像，並經由電腦計算處理後，以特殊的方式呈現在螢幕上。影像如圖\ref{fig:mirror_example_23}所示，經過數位化處理後，現實畫面顯得模糊且朦朧，營造出獨特的視覺效果。該系列中的每件作品皆展現了不同的風格與表現形式。本次實驗將聚焦於其中一種以類似線條形式呈現的數位鏡面作品，進行深入探討。
+數位鏡面最初是\textcite{husart}在機場捷運展示的一系列藝術作品。這些作品透過鏡頭捕捉現實世界的影像，並經由電腦計算處理後，以特殊的方式呈現在螢幕上。影像如圖\ref{fig:mirror_example_23}所示，經過數位化處理後，現實畫面顯得模糊且朦朧，營造出獨特的視覺效果。該系列中的每件作品皆展現了不同的風格與表現形式。本次實驗將聚焦於其中一種以類似線條形式呈現的數位鏡面作品，進行深入探討。
 
 \begin{figure}[htbp]
   \centering
@@ -98,7 +104,7 @@
 \caption{丹尼爾．羅森的數位鏡面}\label{fig:mirror_example_23}
 \end{figure}
 
-本次研究使用的是 happycorn 在 GitHub 上提供的數位鏡面模仿作品（2024）。程式中展示了以線條為主要呈現方式的數33位鏡面，其每一幀的繪製過程包括：讀取影像、繪製多條線條，以及刷新畫面。繪製線條的過程則可細分為以下步驟：模擬一條虛擬線、計算該線條路徑上所有像素點的平均值、以及根據計算結果繪製線條。更詳細的流程如圖\ref{fig:program_flaw}所示。
+本次研究使用的是\textcite{github_mirror}在 GitHub 上提供的數位鏡面模仿作品。程式中展示了以線條為主要呈現方式的數33位鏡面，其每一幀的繪製過程包括：讀取影像、繪製多條線條，以及刷新畫面。繪製線條的過程則可細分為以下步驟：模擬一條虛擬線、計算該線條路徑上所有像素點的平均值、以及根據計算結果繪製線條。更詳細的流程如圖\ref{fig:program_flaw}所示。
 
 \begin{figure}[htbp]
   \centering
@@ -110,13 +116,13 @@
 
 \subsubsection{（二）時間複雜度}
 
-為了比較程式的計算速度，本研究引用了《Introduction to Algorithms》（Cormen et al., 2022）中關於執行時間（running time）的計算觀念。該觀念首先假設，在程式中第 $i$ 步的執行時間為常數 $c_i$。接著，針對輸入大小 $n$，寫出相應的操作步數。例如，若要透過 for 迴圈從長度為 $n$ 的陣列中找出最大值，則需要執行 $n \cdot c_i$ 次操作。
+為了比較程式的計算速度，本研究引用了《Introduction to Algorithms》（\cite{cormen01introduction}）中關於執行時間（running time）的計算觀念。該觀念首先假設，在程式中第 $i$ 步的執行時間為常數 $c_i$。接著，針對輸入大小 $n$，寫出相應的操作步數。例如，若要透過 for 迴圈從長度為 $n$ 的陣列中找出最大值，則需要執行 $n \cdot c_i$ 次操作。
 
 然而，直接這樣表示可能顯得過於繁瑣，因此可以進一步簡化為「增長的量級」。具體而言，只需保留最高次項，並忽略其係數，因為在輸入規模增長後，係數對總體增長的影響微乎其微。這樣的計算方式被翻譯成中文時，通常被稱為該演算法的「時間複雜度」。
 
 \subsubsection{（三）Sum of absolute difference}
 
-在本次實驗中，我需要計算圖片的相似度，為此將採用《Intelligent Image and Video Compression》（Bull \& Zhang, 2021）中提出的 Sum of Absolute Difference（SAD）演算法。該演算法針對兩張圖片 $s_1$ 和 $s_2$，計算它們之間的差異。
+在本次實驗中，我需要計算圖片的相似度，為此將採用《Intelligent Image and Video Compression》（\cite{BULL2021107}）中提出的 Sum of Absolute Difference（SAD）演算法。該演算法針對兩張圖片 $s_1$ 和 $s_2$，計算它們之間的差異。
 
 假設圖片 $s_1$ 和 $s_2$ 的尺寸為寬 $X$ 和高 $Y$，則 SAD 的計算方式如下：
 
@@ -292,13 +298,7 @@ SAD 結果的形態預期與分布如圖\ref{fig:test_img2} 所示。為判定�
 \section{陸、結論}
 
 \newpage
-\section{柒、參考文獻資料}
 
-
-% \noindent
-% \href{https://www.husart.net/?p=372}{丹尼爾羅森的數位鏡面} \\
-
-% \noindent
-% \href{https://github.com/happpycorn/Mirror_Line}{我的數位鏡面}
-
+\printbibliography[title=柒、參考文獻資料]
+\clearpage
 \end{document}
