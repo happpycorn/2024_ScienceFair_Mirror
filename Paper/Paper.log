@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.11.28)  17 DEC 2024 11:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.11.28)  20 DEC 2024 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,19 +483,50 @@ File: img/blank_red.png Graphic file (type bmp)
 <img/blank_red.png>
 File: img/blank_Yellow.png Graphic file (type bmp)
 <img/blank_Yellow.png>
- [7] [8] [9] [10] [11] [12] (Paper.aux)
+ [7] [8]
+File: img/OutputImg/_Time_l-w.png Graphic file (type bmp)
+<img/OutputImg/_Time_l-w.png>
+File: img/OutputImg/_Time_f-w.png Graphic file (type bmp)
+<img/OutputImg/_Time_f-w.png>
+File: img/OutputImg/_Time_l-l.png Graphic file (type bmp)
+<img/OutputImg/_Time_l-l.png>
+File: img/OutputImg/_Time_f-l.png Graphic file (type bmp)
+<img/OutputImg/_Time_f-l.png>
+File: img/OutputImg/_Time_f-r.png Graphic file (type bmp)
+<img/OutputImg/_Time_f-r.png>
+ [9]
+File: img/OutputImg/_Blank_BR.png Graphic file (type bmp)
+<img/OutputImg/_Blank_BR.png>
+File: img/OutputImg/_Blank_BY.png Graphic file (type bmp)
+<img/OutputImg/_Blank_BY.png>
+File: img/OutputImg/_Blank_RB.png Graphic file (type bmp)
+<img/OutputImg/_Blank_RB.png>
+File: img/OutputImg/_Blank_RY.png Graphic file (type bmp)
+<img/OutputImg/_Blank_RY.png>
+File: img/OutputImg/_Blank_YB.png Graphic file (type bmp)
+<img/OutputImg/_Blank_YB.png>
+File: img/OutputImg/_Blank_YR.png Graphic file (type bmp)
+<img/OutputImg/_Blank_YR.png>
+ [10] [11] [12] [13]
+File: img/OutputImg/_Color_2.png Graphic file (type bmp)
+<img/OutputImg/_Color_2.png>
+File: img/OutputImg/_Color_3.png Graphic file (type bmp)
+<img/OutputImg/_Color_3.png>
+File: img/OutputImg/_Color_6.png Graphic file (type bmp)
+<img/OutputImg/_Color_6.png>
+ [14] [15] [16] [17] (Paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8620 strings out of 409617
- 223890 string characters out of 5774012
+ 8775 strings out of 409617
+ 228791 string characters out of 5774012
  1943191 words of memory out of 5000000
- 30633 multiletter control sequences out of 15000+600000
- 562197 words of font info for 70 fonts, out of 8000000 for 9000
+ 30771 multiletter control sequences out of 15000+600000
+ 562213 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,10n,93p,389b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,93p,389b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Paper.xdv (12 pages, 60852 bytes).
+Output written on Paper.xdv (17 pages, 100816 bytes).

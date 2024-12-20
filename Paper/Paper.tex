@@ -277,23 +277,193 @@ SAD 結果的形態預期與分布如圖\ref{fig:test_img2} 所示。為判定�
 
 \subsection{一、實驗一：各參數對數位鏡面執行速度的影響}
 
+實驗結果如圖\ref{fig:result_1}。在圖 a, b 中可以看到，線條寬度無論對應哪個組別都與執行時間呈現低度相關。而在圖 c, d 的線條長度雖然在單條現實呈現低度相關，但當到繪製單幀時，其呈現出高度相關。最後，圖 e 的解析度與執行時間呈現負指數相關。
+
+\begin{figure}[htbp]
+  \centering
+  % 第一行圖片
+  \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{img/OutputImg/_Time_l-w.png} % 替換為你的圖片路徑
+      \caption{線條寬度與單條線繪製時間關係}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{img/OutputImg/_Time_f-w.png} % 替換為你的圖片路徑
+      \caption{線條寬度與單幀繪製時間關係}
+  \end{subfigure}
+  
+  % 第二行圖片
+  \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{img/OutputImg/_Time_l-l.png} % 替換為你的圖片路徑
+      \caption{線條長度與單條線繪製時間關係}
+  \end{subfigure}
+  \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{img/OutputImg/_Time_f-l.png} % 替換為你的圖片路徑
+      \caption{線條長度與單幀繪製時間關係}
+  \end{subfigure}
+
+  \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\linewidth]{img/OutputImg/_Time_f-r.png} % 替換為你的圖片路徑
+      \caption{線條長度與單幀繪製時間關係}
+  \end{subfigure}
+
+  \centering
+  
+  \caption{實驗一實驗結果}\label{fig:result_1}
+\end{figure}
+
+\newpage
+
 \subsection{二、實驗二：各參數對數位鏡面顯示畫面的影響}
 
-\subsubsection{（一）穩定狀態與現實的差異}
+實驗二的結果如圖\ref{fig:result_2}、\ref{fig:result_3}與圖\ref{fig:result_4}（在下頁）。圖中的左中右分別為解析度、線條長度、寬度，顏色代表的是密度，即範圍內有多少組數據。另一方面，圖中，上面是達到穩定狀態所需的時間，下面則是穩定狀態與現實的差異，接下來將分別這兩點進行探討。
 
-\subsubsection{（二）達到穩定狀態所需的時間}
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_BR.png}
+    \caption{白藍交錯至紅黑交錯}
+  \end{subfigure}
 
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_BY.png}
+    \caption{白藍交錯至黃黑交錯}
+  \end{subfigure}
+
+  \caption{實驗二實驗結果（一）}\label{fig:result_2}
+
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_RB.png}
+    \caption{紅黑交錯至白藍交錯}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_RY.png}
+    \caption{紅黑交錯至黃黑交錯}
+  \end{subfigure}
+
+  \caption{實驗二實驗結果（二）}\label{fig:result_3}
+
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_YB.png}
+    \caption{黃黑交錯至白藍交錯}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Blank_YR.png}
+    \caption{黃黑交錯至紅黑交錯}
+  \end{subfigure}
+
+  \caption{實驗二實驗結果（三）}\label{fig:result_4}
+
+\end{figure}
+
+\subsubsection{（一）達到穩定狀態所需的時間}
+
+在達到穩定狀態所需的時間中，線條長度與線條寬度十分相似，皆呈現負相關，並且數據的形式類似斷層，即中間的過度數據少，左上與右下的數值多。而解析度則呈現正相關，也有類似斷層的現象，但比起線條長度與線條寬度較不明顯。
+
+\subsubsection{（二）穩定狀態與現實的差異}
+
+在穩定狀態與現實的差異中，線條長度呈現的特徵也與線條寬度類似，兩者在大多視情況中，數值低時會造成穩定狀態不穩定，但提高數值便會使其與現實的差異收斂到一定程度。
+
+反觀解析度並沒有收斂這種現象，其無論數值大小，都會有一定的離群值。不過值得一提的是，在解析度上，一開始數值偏小時，離群值會偏低，而數值變大時，離群值則會上升，但收斂值卻不太會改變。
+
+\newpage
 \subsection{三、實驗三：不同場景對於數位鏡面的影響}
+
+實驗結果如圖\ref{fig:result_5}，我將其分為顏色數量與場景複雜程度來討論。就顏色數量而言，他們之間的差異程度並沒有決定性的差距，甚至對應不同組別也可能會有不同的結果。但在場景複雜度上，大多數狀況中，複雜程度高的場景明顯的比複雜程度低的場景SAD還要高。
+
+而在2種顏色對應的複雜程度中由額外進行不同顏色的SAD實驗，在這之中，紅、綠、藍三色的SAD最低，再來是青、紫、黃，最高的是白。
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}[b]{0.9\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Color_2.png}
+    \caption{2 種顏色對應不同複雜程度}
+  \end{subfigure}
+
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Color_3.png}
+    \caption{3 種顏色對應不同複雜程度}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{img/OutputImg/_Color_6.png}
+    \caption{6 種顏色對應不同複雜程度}
+  \end{subfigure}
+
+  \caption{實驗三實驗結果}\label{fig:result_5}
+
+\end{figure}
 
 \newpage
 \section{伍、討論}
 
+\subsection{一、實驗一與時間複雜度}
+
+若是對於數位鏡面進行時間複雜度的拆解可以寫出以下算式：
+
+\[
+O(\frac{l}{r^2}) 
+\]
+
+在算式中，$l$是指線條長度，$r$是指解析度，這兩項數值會對數位鏡面的執行時間造成最大的影響。其結果也大致符合實驗一的計算結果。唯一不符合的部分是在於線條長度對於單條線繪製時間的影響，我認為這是因為執行次數少，常數的影響大，因此時間複雜度的影響並不大，而當執行次數上升到繪製單幀時，其就呈現出了正向的相關。
+
+\subsection{二、線條長度與線條寬度的相似}
+
+在實驗二中，線條長度與線條寬度對於實驗結果的影響是類似的，我認為這是因為這兩項數值對於線條的影響類似，都是影響「線條的面積」，因此對於數位鏡面的影響相似。
+
+\subsection{三、解析度的收斂值}
+
+實驗二中，解析度一開始數值偏小時，離群值會偏低；數值變大時，離群值則會上升，但收斂值卻不太會改變。數位鏡面在當初設計時，解析度除了為了加速外，很大一部份想做的的事其實是減少隨機繪製造成的偏差（happpycorn，2024）。但在實驗結果中，解析度的限制其實只有對應到離群值，對於收斂值並沒有太多的影響，其中的原理或許是未來數位鏡面可以優化的契機。
+
+\subsection{四、環境顏色與SAD}
+
+在實驗三中，2種顏色對應的複雜程度額外進行的不同顏色SAD實驗中，紅、綠、藍三色的SAD最低，再來是青、紫、黃，最高的是白。我發現其數值某種程度上與他對應的另一個顏色（黑）的SAD呈現正相關，這表示環境在一定程度上對於數位鏡面呈現的效果是有影響的。我認為要對數位鏡面進行優化的話，或許可以針對不同的環境進行優化。
+
+\subsection{五、數位鏡面的最優設定}
+
+由於藝術並沒有所謂的最優解，這裡主要探討的是對應的需求下會需要的不同參數設定。若是希望反應的速度慢些，有點變化的感覺，可以調低線條的長度、寬度，調高解析度，反之亦然。若是希望更貼合現實的畫面的話，可以調低解析度。若是希望畫面的隨機性增加，則可以減少線條的長度與寬度。
+
 \newpage
 \section{陸、結論}
 
+\subsubsection{（一）了解不同參數設定對於數位鏡面的影響}
+
+在執行時間方面，線條寬度不相關、線條長度呈正相關、解析度呈負指數相關。達到穩定狀態所需的時間方面，解析度呈正相關、線條寬度與線條長度呈負相關。穩定狀態與現實的差異方面，線條寬度與線條長度在數值低時不穩定、數值高時則會收斂；解析度無論高低收斂值都類似，但離群值在數值低時偏低、在數值高時偏高。
+
+\subsubsection{（二）了解不同影像環境對於數位鏡面的影響}
+
+在環境複雜度方面，複雜度越高、相同設定下的與現實差異就會越大；顏色數量對於相同設定下的與現實差異影響並不大。
+
+在2種顏色做的額外實驗中，2種顏色的差異越大、畫面與現實的差異越大。
+
+\subsubsection{（三）探討不同環境與需求下數位鏡面的最優設定}
+
+若希望反應較慢且有些變化，可降低線條長度與寬度，提升解析度；反之，增長線條並降低解析度可加快反應速度。為貼近現實，可降低解析度；增加隨機性則可縮短線條並減小寬度。
+
 \newpage
 \section{柒、參考文獻資料}
-
 
 % \noindent
 % \href{https://www.husart.net/?p=372}{丹尼爾羅森的數位鏡面} \\

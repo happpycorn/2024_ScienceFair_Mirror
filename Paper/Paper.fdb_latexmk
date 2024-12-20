@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1734406490.81808 "Paper.xdv" "Paper.pdf" "Paper" 1734406495.34049 0
-  "Paper.xdv" 1734406490 60852 d09f6a375c75102135800a48160fcea3 "xelatex"
+["xdvipdfmx"] 1734666930.94646 "Paper.xdv" "Paper.pdf" "Paper" 1734666960.62723 0
+  "Paper.xdv" 1734666930 100816 e009a6a4158e4835d340d5839a27a456 "xelatex"
   (generated)
   "Paper.pdf"
   (rewritten before read)
-["xelatex"] 1734406486.28113 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734406495.32561 0
+["xelatex"] 1734666927.3928 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734666960.61231 0
   "C:/Users/happp/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732754882 37546050 c464b94ed3a2d1a30e8332298b356bdc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -57,12 +57,26 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Paper.aux" 1734406490 5226 f82cd0a5a64ca9eaa3129c486650601d "xelatex"
-  "Paper.tex" 1734406483 15291 66452be81906fb7641ad46f0416e59e0 ""
-  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734406483 15291 66452be81906fb7641ad46f0416e59e0 ""
+  "Paper.aux" 1734666930 7500 439a25747201fa93f51fcd52c6eeed6d "xelatex"
+  "Paper.tex" 1734666925 24536 ae34c0724db0736a521bf9e8b374d7f5 ""
+  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734666925 24536 ae34c0724db0736a521bf9e8b374d7f5 ""
   "img//mirror_example_1.jpg" 1733703810 863346 30520c63d9d138cec963917195dab006 ""
   "img//program_flaw.jpg" 1733707913 428912 a5acaf7d0a474044973f7c1bc9fa8843 ""
   "img//research_flaw.png" 1734180644 592857 36ff53d950b650884382c9f651121fe5 ""
+  "img/OutputImg/_Blank_BR.png" 1734621945 718821 de742e48a4e222fb25f1437dfb1ab7f5 ""
+  "img/OutputImg/_Blank_BY.png" 1734622133 745301 11948b23dd477eab47278606e0d559a5 ""
+  "img/OutputImg/_Blank_RB.png" 1734622156 777680 438b2d176ca0b07de6f1960859032c31 ""
+  "img/OutputImg/_Blank_RY.png" 1734622187 706877 90ad2272c20a4511782008c44bda18c8 ""
+  "img/OutputImg/_Blank_YB.png" 1734622211 769869 b297d9ae04cf0c0c86c75fccea10dc90 ""
+  "img/OutputImg/_Blank_YR.png" 1734622244 701871 c3fa9e9db0f3dd501b9e7824bbdf3066 ""
+  "img/OutputImg/_Color_2.png" 1734625815 99747 a7ce9a205e8a1e5050720ddbd3c59a3e ""
+  "img/OutputImg/_Color_3.png" 1734650649 118640 87fd77d413ac834d7118a11da29b90aa ""
+  "img/OutputImg/_Color_6.png" 1734650689 116100 bfd9a7dd65bad8076c955446786e8d59 ""
+  "img/OutputImg/_Time_f-l.png" 1734622973 311584 f17dddc873bd7c497c720f2a6293e7c3 ""
+  "img/OutputImg/_Time_f-r.png" 1734623119 142669 ff7b4e7eb4648c1595569186384dfd79 ""
+  "img/OutputImg/_Time_f-w.png" 1734623049 334591 566fb439e898cec5ae844e968550ce1e ""
+  "img/OutputImg/_Time_l-l.png" 1734622906 174910 370b36675c97121d7940ac83d1241763 ""
+  "img/OutputImg/_Time_l-w.png" 1734622823 193042 e13860430135a5b4475659a6f4d2c665 ""
   "img/SAD_expriment_example_1.png" 1734018113 110670 9ebd0e0b7bf327a1e0044e90114306bb ""
   "img/SAD_expriment_example_2.png" 1734018489 98426 2cfa105e4770f3d6ffd142858677b5a9 ""
   "img/blank_Yellow.png" 1732462847 10905 20d035a51392e02bcaa122455548ebbc ""
