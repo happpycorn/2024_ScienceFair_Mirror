@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber Paper"] 1734667416.70074 "Paper.bcf" "Paper.bbl" "Paper" 1734667825.99785 0
-  "Paper.bcf" 1734667796 133463 0f550962643a2322d18ad3784d4a4a77 "xelatex"
+["biber Paper"] 1734667416.70074 "Paper.bcf" "Paper.bbl" "Paper" 1735141585.81467 0
+  "Paper.bcf" 1735141571 133463 0f550962643a2322d18ad3784d4a4a77 "xelatex"
   "reference.bib" 1734667042 2182 40dc467287d743cafc1c91c0612c4afc ""
   (generated)
   "Paper.bbl"
   "Paper.blg"
   (rewritten before read)
-["xdvipdfmx"] 1734667797.35898 "Paper.xdv" "Paper.pdf" "Paper" 1734667826.01663 0
-  "Paper.xdv" 1734667796 117784 3e9f1b2c1ceee8b69268df5874d3e969 "xelatex"
+["xdvipdfmx"] 1735141571.86697 "Paper.xdv" "Paper.pdf" "Paper" 1735141585.82583 0
+  "Paper.xdv" 1735141571 117752 b97074eea85422601e075d4a5579a64b "xelatex"
   (generated)
   "Paper.pdf"
   (rewritten before read)
-["xelatex"] 1734667791.98417 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1734667825.99882 0
+["xelatex"] 1735141568.71033 "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" "Paper.xdv" "Paper" 1735141585.81524 0
   "C:/Users/happp/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732754882 37546050 c464b94ed3a2d1a30e8332298b356bdc ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -89,11 +89,11 @@
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/happp/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "Paper.aux" 1734667796 8860 23f58520866cf87cc049e877b475f836 "xelatex"
+  "Paper.aux" 1735141571 8860 23f58520866cf87cc049e877b475f836 "xelatex"
   "Paper.bbl" 1734667422 16039 3644d737a6b7a4b03a339aa929b12270 "biber Paper"
-  "Paper.run.xml" 1734667796 2468 1c15c0575310b965ccd6af0235fe9033 "xelatex"
-  "Paper.tex" 1734667790 25538 1684638ccf1e4d98858cc01598e75424 ""
-  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1734667790 25538 1684638ccf1e4d98858cc01598e75424 ""
+  "Paper.run.xml" 1735141571 2468 1c15c0575310b965ccd6af0235fe9033 "xelatex"
+  "Paper.tex" 1735141567 25536 b8e21bf1df8b92c836885d91d7627e1e ""
+  "c:/Users/happp/Documents/2024_ScienceFair_Mirror/Paper/Paper.tex" 1735141567 25536 b8e21bf1df8b92c836885d91d7627e1e ""
   "img//mirror_example_1.jpg" 1733703810 863346 30520c63d9d138cec963917195dab006 ""
   "img//program_flaw.jpg" 1733707913 428912 a5acaf7d0a474044973f7c1bc9fa8843 ""
   "img//research_flaw.png" 1734180644 592857 36ff53d950b650884382c9f651121fe5 ""

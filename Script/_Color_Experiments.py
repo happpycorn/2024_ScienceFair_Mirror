@@ -7,7 +7,7 @@ from Modules.Modules import MirrorFrame
 TEST_TIME = 10
 TEST_COUNT = 100
 
-FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror\Blank\3'
+FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror\Blank\6'
 
 BLANKS = [f for f in os.listdir(FOLDER)]
 

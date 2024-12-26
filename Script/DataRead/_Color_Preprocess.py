@@ -3,7 +3,7 @@ import numpy as np
 
 FOLDER = r'C:\Users\happp\Documents\2024_ScienceFair_Mirror'
 
-PATH = r'FinishData\Color\data_c3.npy'
+PATH = r'FinishData\Color\data_c6.npy'
 
 def Histograms(data, num_bins=20):
 

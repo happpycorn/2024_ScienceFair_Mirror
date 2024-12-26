@@ -4,7 +4,7 @@ import numpy as np
 FRAME_SIZE_X = 800
 FRAME_SIZE_Y = int(FRAME_SIZE_X * 0.75)
 
-RESOLUTION = 200
+RESOLUTION = 50
 
 blank = np.zeros((FRAME_SIZE_Y, FRAME_SIZE_X, 3), dtype=np.uint8)
 
